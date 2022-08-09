@@ -13,7 +13,7 @@ jobs:
       - name:  step 1
         env: 
          My_SECRET: ${{ secrets.MY_SECRET }}
-      - run: |
+        run: |
          echo $MY_SECRET
          touch step1.txt
          echo "hi from step 1" >step1.txt
