@@ -10,9 +10,10 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - uses: actions/checkout@v3
-      - name:  run bash command
+      - name:  step 1
         env: 
-        My_SECRET: ${{ secrets.MY_SECRET }}
-        run: |
+         My_SECRET: ${{ secrets.MY_SECRET }}
+      - run: |
          echo $MY_SECRET
-         
+         touch step1.txt
+         echo "hi from step 1" >step1.txt
