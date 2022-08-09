@@ -10,4 +10,9 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - uses: actions/checkout@v3
-      - run: 'echo "hi"'
+      - name:  run bash command
+        env: 
+        My_SECRET: ${{ secrets.MY_SECRET }}
+        run: |
+         echo $MY_SECRET
+         
