@@ -1,7 +1,7 @@
 name: First Bash
 
 on:
- pull: 
+ push: 
    branches: 
      - "*"
 
@@ -10,4 +10,4 @@ jobs:
    runs-on: ubuntu-latest
    steps:
       - uses: actions/checkout@v3
-      - run: 'echo "hi"' 
+      - run: 'echo "hi"''
